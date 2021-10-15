@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+
+
 def print_last_digit(number):
-            if number < 0: number *= -1
-                num = list(map(int, str(number)))
-                    number = num[-1]
-                        print("{:d}".format(number), end="")
-                            return number
+    """Print the last digit of a number and return it."""
+    print(abs(number) % 10, end="")
+    return (abs(number) % 10)
